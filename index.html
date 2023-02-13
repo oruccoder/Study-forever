@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Forever</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+<body>
+
+    <div class="social-media">
+        <div class="youtube">
+            <a href="https://www.youtube.com/@stud.yforever1" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="instagram">
+            <a href="https://www.instagram.com/stud.yforever1/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="tiktok">
+            <a href="https://www.tiktok.com/@stud.yforever1" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+    <audio id="aud" src="audio.mp3"></audio>
+
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    
+    <div class="container">
+        
+    </div>
+
+    <div class="navbar">
+        <h1><span id="dakika">00</span>:<span id="saniye">00</span></h1>
+        <form>
+            <label>
+                Dəqiqə
+                <input id="section-dk" type="number" min="0" max="59" value="00">
+            </label>
+            <label>
+                Saniyə
+                <input id="section-sn" type="number" min="0" max="59" value="00">
+            </label>
+        </form>
+        <button id="baslat">Başla</button>
+        <button id="sıfırla">Sıfırla</button>
+        <button id="dayandır">Dayandır</button>
+    </div>
+    <audio src="audio.mp3" id="audio"></audio>
+
+    <script src="app.js"></script>
+
+    <script>
+        setTimeout(function() {
+            $(".loader_bg").fadeToggle();
+        }, 1500);
+    </script>
+    
+</body>
+</html>
